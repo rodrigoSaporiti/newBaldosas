@@ -564,7 +564,7 @@ body.no-scroll {
   height: 80%;
   gap: 15px;
   margin: 0 auto;
-  transform: translateY(0px) translateX(8px);
+  transform: translateY(10px) ;
 }
 
 .contenedorCardsSeccion a {
@@ -608,7 +608,7 @@ body.no-scroll {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  transform: translateX(10px);
+  transform:  translateY(10px);
  
 }
 
@@ -726,7 +726,7 @@ body.no-scroll {
   gap: 15px;
   margin: 0 auto;
   justify-content: start;
-  transform: translateX(8px) translateY(25px);
+  transform: translateY(10px);
 }
 
 .contenedorCardsCatalogo img{
