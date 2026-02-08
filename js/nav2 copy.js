@@ -15,18 +15,9 @@ const menu = document.getElementById("menu"); // icono que se hace click
 
 const menuCelular = document.querySelector(".menuCelular"); //menu principal donde estan los enlaces
 
+
+const productosCelular = document.getElementById("productosCelular"); // donde se hace click en productos
 const megaMenuCelular = document.querySelector(".megaMenuCelular"); // abre el menu secundario con productos
-
-
-const megaProductos = document.querySelector(".megaProductos") // megaProductos es el contenedor que se abre secundario de productos y muestra lisas mosaicos etc
-console.log(megaProductos)
-
-//Secciones a activar
-const productosCelular = document.getElementById("productosCelular")
-const productosSeccion = document.getElementById("productosSeccion")
-const productosColor = document.getElementById("productosColor")
-const productosCalogo = document.getElementById("productosCatalogo")
-
 
 menu.addEventListener("click", () => {
   menuCelular.classList.toggle("active");
@@ -47,6 +38,8 @@ menu.addEventListener("click", () => {
   }
 });
 
+const megaProductos = document.querySelector(".megaProductos") // megaProductos es el contenedor que se abre secundario de productos y muestra lisas mosaicos etc
+console.log(megaProductos)
 
 
 productosCelular.addEventListener("click", (e) => {
@@ -74,37 +67,17 @@ function menuFuncionar(x, y, z, a) {
 
 
 
-const galeriaSeccionCelular = document.querySelector(".galeriaSeccionCelular");// cuando se hace click en galeria seccion 
-
-console.log(galeriaSeccionCelular)
+const galeriaSeccionCelular = document.querySelector(".galeriaSeccionCelular");
+const megaSecciones = document.querySelector(".megaSecciones");
+console.log(megaSecciones)
 
 // 👉 llamada a la función (AFUERA)
 menuFuncionar(
   galeriaSeccionCelular,
   menuCelular,
   megaMenuCelular,
-  productosSeccion
+  megaSecciones
 );
-
-
-const galeriaColorCelular = document.querySelector(".galeriaColorCelular");
-
-menuFuncionar(
-  galeriaColorCelular,
-  menuCelular,
-  megaMenuCelular,
-  productosColor
-)
-
-
-const catalogoCelular = document.querySelector(".catalogoCelular");
-
-menuFuncionar(
-  catalogoCelular,
-  menuCelular,
-  megaMenuCelular,
-  productosCalogo
-)
 
 
 
@@ -114,7 +87,5 @@ back.addEventListener("click", () => {
   megaMenuCelular.classList.remove("active");
   menuCelular.classList.add("active");
    megaProductos.classList.remove("active");
-   productosSeccion.classList.remove("active");
-   productosColor.classList.remove("active");
-   productosCalogo.classList.remove("active");
+   megaSecciones.classList.remove("active");
 });
