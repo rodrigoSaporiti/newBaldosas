@@ -611,7 +611,7 @@ body.no-scroll {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 90%;
-  height: 70%;
+  height: 65%;
   gap: 10px;
   margin: 0 auto;
   justify-content: center;
