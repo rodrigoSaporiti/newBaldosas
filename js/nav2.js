@@ -161,14 +161,16 @@ let lastScroll = window.scrollY;
 const nav = document.querySelector("nav");
 
 window.addEventListener("scroll", () => {
-
   let currentScroll = window.scrollY;
 
-  if (currentScroll > lastScroll) {
-    // Bajando
+  if (currentScroll <= 0) {
+    // Siempre mostrar nav si estamos arriba de todo
+    nav.classList.remove("nav-hidden");
+  } else if (currentScroll > lastScroll) {
+    // Scroll hacia abajo → ocultar
     nav.classList.add("nav-hidden");
   } else {
-    // Subiendo
+    // Scroll hacia arriba → mostrar
     nav.classList.remove("nav-hidden");
   }
 
