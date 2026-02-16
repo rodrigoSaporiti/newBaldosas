@@ -118,3 +118,24 @@ back.addEventListener("click", () => {
    productosColor.classList.remove("active");
    productosCalogo.classList.remove("active");
 });
+
+
+
+
+let lastScroll = window.scrollY;
+const nav = document.querySelector("nav");
+
+window.addEventListener("scroll", () => {
+
+  let currentScroll = window.scrollY;
+
+  if (currentScroll > lastScroll) {
+    // Bajando
+    nav.classList.add("nav-hidden");
+  } else {
+    // Subiendo
+    nav.classList.remove("nav-hidden");
+  }
+
+  lastScroll = currentScroll;
+});
