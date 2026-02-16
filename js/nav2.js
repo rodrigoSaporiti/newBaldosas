@@ -28,6 +28,40 @@ const productosColor = document.getElementById("productosColor")
 const productosCalogo = document.getElementById("productosCatalogo")
 
 
+
+// Detectar swipe en el menú de celular
+let touchStartX = 0;
+let touchEndX = 0;
+
+menuCelular.addEventListener("touchstart", (e) => {
+  touchStartX = e.touches[0].clientX;
+});
+
+menuCelular.addEventListener("touchmove", (e) => {
+  touchEndX = e.touches[0].clientX;
+});
+
+menuCelular.addEventListener("touchend", () => {
+  // Swipe hacia la izquierda (cierra menú)
+  if (touchStartX - touchEndX > 50) { 
+    menuCelular.classList.remove("active");
+    megaMenuCelular.classList.remove("active");
+    megaProductos.classList.remove("active");
+    liberarScroll();
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
 menu.addEventListener("click", () => {
   menuCelular.classList.toggle("active");
   
@@ -46,6 +80,7 @@ menu.addEventListener("click", () => {
 
   }
 });
+
 
 
 
