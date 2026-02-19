@@ -21,6 +21,8 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-6xl: 72rem;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-2xl: 1.5rem;
@@ -513,8 +515,35 @@
   .bg-zinc-100 {
     background-color: var(--color-zinc-100);
   }
+  .object-contain {
+    object-fit: contain;
+  }
   .object-cover {
     object-fit: cover;
+  }
+  .object-\[50\%_20\%\] {
+    object-position: 50% 20%;
+  }
+  .object-\[50\%_30\%\] {
+    object-position: 50% 30%;
+  }
+  .object-\[50\%_\] {
+    object-position: 50% ;
+  }
+  .object-\[50\] {
+    object-position: 50;
+  }
+  .object-bottom {
+    object-position: bottom;
+  }
+  .object-bottom-left {
+    object-position: left bottom;
+  }
+  .object-center {
+    object-position: center;
+  }
+  .object-top {
+    object-position: top;
   }
   .p-1 {
     padding: calc(var(--spacing) * 1);
@@ -548,6 +577,16 @@
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-\[8px\] {
+    font-size: 8px;
+  }
+  .text-\[12px\] {
+    font-size: 12px;
   }
   .leading-tight {
     --tw-leading: var(--leading-tight);

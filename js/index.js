@@ -49,7 +49,7 @@ productos.addEventListener("click", ()=>{
 
 back.addEventListener("click", ()=>{
 
-      setTimeout(() => {
+     
 
      productosMenu.classList.add("scale-x-0")
     productosMenu.classList.remove("scale-x-100")
@@ -62,7 +62,6 @@ back.addEventListener("click", ()=>{
 
     menu.classList.remove("hidden")
  
-  }, 10); // 10ms es imperceptible para el humano, pero oro puro para el navegador
 
 
 
