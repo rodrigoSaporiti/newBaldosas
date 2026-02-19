@@ -1,0 +1,42 @@
+const menu = document.getElementById("menu");
+const pathMenu = document.getElementById("pathMenu");
+const menuCelularComun = document.getElementById("menuCelularComun")
+
+menu.addEventListener("click",()=>{
+
+
+    menuCelularComun.classList.toggle("scale-x-0")
+    menuCelularComun.classList.toggle("scale-x-100")
+
+
+    if(pathMenu.getAttribute ("d") == "M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"){
+         pathMenu.setAttribute("d", "M6 18L18 6M6 6l12 12");
+       
+    }else{
+        pathMenu.setAttribute("d", "M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12")
+    }
+
+
+})
+
+
+
+const productos = document.getElementById("productos");
+const productosMenu = document.getElementById("productosMenu");
+
+
+productos.addEventListener("click", ()=>{
+
+     
+   setTimeout(() => {
+
+     productosMenu.classList.toggle("scale-x-0")
+    productosMenu.classList.toggle("scale-x-100")
+
+  }, 500); // 10ms es imperceptible para el humano, pero oro puro para el navegador
+
+    
+    
+   
+
+})

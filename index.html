@@ -7,7 +7,7 @@
 
 
   </head>
-  <body class="scroll-smooth">
+  <body class="scroll-smooth relative ">
 
 <nav class="bg-white shadow relative h-28 w-full hidden lg:block ">
   <div class="w-3/4 mx-auto my-auto px-4 flex justify-between items-center h-full">
@@ -75,22 +75,37 @@
 </nav>
 
 
-<nav class="w-full bg-gray-50 h-18 lg:hidden">
+<nav class="w-full bg-gray-50 h-22 lg:hidden ">
 
 
   <div class="w-3/4 h-full flex items-center justify-between mx-auto ">
 
     <div class=" ">
-      <img src="img/lv_black_real.png" alt="" class="w-15 block">
+      <img src="img/lv_black_real.png" alt="" class="w-18 block">
 
     </div>
 
 
-    <div class="">
+   
 
-     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 block">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+    <div class=" flex space-x-2">
+
+    <div class="mx-auto my-auto mr-5">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="currentColor" class="size-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+        </svg>
+
+        </div>
+
+    <div>
+     <svg id="menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="currentColor" class="size-10 block">
+  <path id="pathMenu" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
    </svg>
+   </div>
+
+
+   
+</svg>
 
 
 
@@ -101,6 +116,113 @@
 
 
 </nav>
+
+
+
+<section id="menuCelularComun" class="w-screen h-screen flex  m-0 absolute scale-x-0 transition-transform duration-400 ease-out origin-left ">
+
+  <div class="h-screen w-3/4  bg-zinc-100  ">
+
+    <div class="flex flex-col justify-start items-start text-2xl mt-10 ms-2  space-y-5 ">
+    <button >Inicio</button>
+    <button id="productos">Productos</button>
+    <button>Galería por sección</button>
+    <button>Galería por color</button>
+    <button>Catálogos</button>
+    <button>Preguntas frecuentes</button>
+    <button>Contacto</button>
+
+     </div>
+  </div>
+
+
+
+
+  <div class="w-1/4 bg-black/50 p-1   h-screen  ">
+
+   
+  </div>
+
+
+</section>
+
+
+
+<section id="productosMenu" class="w-screen h-[calc(100vh-88px)] absolute  bg-zinc-100 scale-x-0 transition-transform duration-1000 z-30 ease-out origin-right will-change-transform ">
+
+
+
+  </div>
+
+  <div  class=" w-[90%] h-[90%] mx-auto mt-2 my-auto grid grid-cols-2 grid-rows-4 gap-4 ">
+
+
+     <div class="w-full h-full relative border-8 border-white shadow-lg  rounded-3xl overflow-hidden border-solid mx-auto my-auto hover:scale-105 transition-transform duration-300 hover:cursor-pointer">
+       <img src="img/mosaicos.jpg" alt="" class="w-full h-full object-cover ">
+       <button class="cursor-pointer  absolute w-[95%] bottom-1 left-1/2 transform -translate-x-1/2 bg-white text-black px-0 py-0 rounded-2xl shadow " >Mosaicos </button>
+     </div>
+
+     <div class="w-full h-full relative border-8 border-white shadow-lg  rounded-3xl overflow-hidden border-solid mx-auto my-auto hover:scale-105 transition-transform duration-300 hover:cursor-pointer">
+       <img src="img/lisas.png" alt="" class="w-full h-full object-cover ">
+       <button class="cursor-pointer  absolute w-[95%] bottom-1 left-1/2 transform -translate-x-1/2 bg-white text-black px-0 py-0 rounded-2xl shadow " >Lisas </button>
+     </div>
+
+       <div class="w-full h-full relative border-8 border-white shadow-lg  rounded-3xl overflow-hidden border-solid mx-auto my-auto hover:scale-105 transition-transform duration-300 hover:cursor-pointer">
+       <img src="img/mosaicos.jpg" alt="" class="w-full h-full object-cover ">
+       <button class="cursor-pointer  absolute w-[95%] bottom-1 left-1/2 transform -translate-x-1/2 bg-white text-black px-0 py-0 rounded-2xl shadow " >Mosaicos </button>
+     </div>
+
+     <div class="w-full h-full relative border-8 border-white shadow-lg  rounded-3xl overflow-hidden border-solid mx-auto my-auto hover:scale-105 transition-transform duration-300 hover:cursor-pointer">
+       <img src="img/lisas.png" alt="" class="w-full h-full object-cover ">
+       <button class="cursor-pointer  absolute w-[95%] bottom-1 left-1/2 transform -translate-x-1/2 bg-white text-black px-0 py-0 rounded-2xl shadow " >Lisas </button>
+     </div>
+
+
+     <div class="w-full h-full relative border-8 border-white shadow-lg  rounded-3xl overflow-hidden border-solid mx-auto my-auto hover:scale-105 transition-transform duration-300 hover:cursor-pointer">
+       <img src="img/mosaicos.jpg" alt="" class="w-full h-full object-cover ">
+       <button class="cursor-pointer  absolute w-[95%] bottom-1 left-1/2 transform -translate-x-1/2 bg-white text-black px-0 py-0 rounded-2xl shadow " >Mosaicos </button>
+     </div>
+
+     <div class="w-full h-full relative border-8 border-white shadow-lg  rounded-3xl overflow-hidden border-solid mx-auto my-auto hover:scale-105 transition-transform duration-300 hover:cursor-pointer">
+       <img src="img/lisas.png" alt="" class="w-full h-full object-cover ">
+       <button class="cursor-pointer  absolute w-[95%] bottom-1 left-1/2 transform -translate-x-1/2 bg-white text-black px-0 py-0 rounded-2xl shadow " >Lisas </button>
+     </div>
+
+       <div class="w-full h-full relative border-8 border-white shadow-lg  rounded-3xl overflow-hidden border-solid mx-auto my-auto hover:scale-105 transition-transform duration-300 hover:cursor-pointer">
+       <img src="img/mosaicos.jpg" alt="" class="w-full h-full object-cover ">
+       <button class="cursor-pointer  absolute w-[95%] bottom-1 left-1/2 transform -translate-x-1/2 bg-white text-black px-0 py-0 rounded-2xl shadow " >Mosaicos </button>
+     </div>
+
+     <div class="w-full h-full relative border-8 border-white shadow-lg  rounded-3xl overflow-hidden border-solid mx-auto my-auto hover:scale-105 transition-transform duration-300 hover:cursor-pointer">
+       <img src="img/lisas.png" alt="" class="w-full h-full object-cover ">
+       <button class="cursor-pointer  absolute w-[95%] bottom-1 left-1/2 transform -translate-x-1/2 bg-white text-black px-0 py-0 rounded-2xl shadow " >Lisas </button>
+     </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -146,6 +268,6 @@
 
 
 
-
+<script src="js/index.js"></script>
   </body>
 </html>
