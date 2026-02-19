@@ -33,7 +33,7 @@ productos.addEventListener("click", ()=>{
      productosMenu.classList.toggle("scale-x-0")
     productosMenu.classList.toggle("scale-x-100")
 
-  }, 500); // 10ms es imperceptible para el humano, pero oro puro para el navegador
+  }, 10); // 10ms es imperceptible para el humano, pero oro puro para el navegador
 
     
     
