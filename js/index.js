@@ -30,6 +30,11 @@ productos.addEventListener("click", ()=>{
 
     back.classList.toggle("opacity-0");
     back.classList.toggle("opacity-100");
+   
+    back.classList.add("duration-300")
+     back.classList.remove("duration-0")
+
+    menu.classList.add("hidden");
 
      
    setTimeout(() => {
@@ -48,9 +53,14 @@ back.addEventListener("click", ()=>{
 
      productosMenu.classList.add("scale-x-0")
     productosMenu.classList.remove("scale-x-100")
+    
 
+     back.classList.remove("duration-300")
+    back.classList.add("duration-0")
        back.classList.add("opacity-0");
     back.classList.remove("opacity-100");
+
+    menu.classList.remove("hidden")
  
   }, 10); // 10ms es imperceptible para el humano, pero oro puro para el navegador
 
