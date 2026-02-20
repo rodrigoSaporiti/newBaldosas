@@ -328,6 +328,9 @@
   .h-screen {
     height: 100vh;
   }
+  .min-h-\[calc\(100svh-100px\)\] {
+    min-height: calc(100svh - 100px);
+  }
   .w-1 {
     width: calc(var(--spacing) * 1);
   }
