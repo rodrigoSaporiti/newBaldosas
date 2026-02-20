@@ -280,11 +280,26 @@
   .h-28 {
     height: calc(var(--spacing) * 28);
   }
+  .h-60 {
+    height: calc(var(--spacing) * 60);
+  }
   .h-72 {
     height: calc(var(--spacing) * 72);
   }
   .h-80 {
     height: calc(var(--spacing) * 80);
+  }
+  .h-90 {
+    height: calc(var(--spacing) * 90);
+  }
+  .h-96 {
+    height: calc(var(--spacing) * 96);
+  }
+  .h-100 {
+    height: calc(var(--spacing) * 100);
+  }
+  .h-140 {
+    height: calc(var(--spacing) * 140);
   }
   .h-150 {
     height: calc(var(--spacing) * 150);
