@@ -94,6 +94,16 @@ abrirSegundoMenu(galeriaColor, galeriaColorMenu, back, menu,segundoMenu);
 
 
 
+//catalogos menu
+
+const catalogos = document.getElementById("catalogos"); // link button galeria de secciones
+
+const catalogoMenu = document.getElementById("catalogoMenu"); // donde estan las card de galaeria de secciones
+
+
+
+abrirSegundoMenu(catalogos, catalogoMenu, back, menu,segundoMenu);
+
 
 
 
@@ -107,6 +117,7 @@ back.addEventListener("click", ()=>{
   productosMenu.classList.add("hidden")
   galeriaSeccionMenu.classList.add("hidden")
   galeriColornMenu.classList.add("hidden")
+  catalogoMenu.classList.add("hidden")
 
      segundoMenu.classList.add("scale-x-0")
     segundoMenu.classList.remove("scale-x-100")

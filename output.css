@@ -292,6 +292,9 @@
   .h-175 {
     height: calc(var(--spacing) * 175);
   }
+  .h-\[45\%\] {
+    height: 45%;
+  }
   .h-\[90\%\] {
     height: 90%;
   }
@@ -404,6 +407,9 @@
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
   }
   .grid-rows-4 {
     grid-template-rows: repeat(4, minmax(0, 1fr));
