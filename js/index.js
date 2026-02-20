@@ -1,6 +1,14 @@
-const menu = document.getElementById("menu");
-const pathMenu = document.getElementById("pathMenu");
-const menuCelularComun = document.getElementById("menuCelularComun")
+const menu = document.getElementById("menu");//icono menu
+const pathMenu = document.getElementById("pathMenu");// svg donde esta la imagen del icono 
+const menuCelularComun = document.getElementById("menuCelularComun")// menu simple donde muestra el primer menu selector
+
+const back = document.getElementById("back");// boton para ir para atras
+
+const segundoMenu = document.getElementById("segundoMenu");// este es el segundo menu que se despliega mostrando cards
+
+
+
+// evento click para abrir el primer menu selector
 
 menu.addEventListener("click",()=>{
 
@@ -21,12 +29,15 @@ menu.addEventListener("click",()=>{
 
 
 
-const productos = document.getElementById("productos");
-const productosMenu = document.getElementById("productosMenu");
-const back = document.getElementById("back");
 
 
-productos.addEventListener("click", ()=>{
+// creo una funcion para abir y cerrar los menu 
+
+function abrirSegundoMenu(producto, productoMenu, back, menu, segundoMenu){
+
+producto.addEventListener("click", ()=>{
+
+  productoMenu.classList.toggle("hidden")
 
     back.classList.toggle("opacity-0");
     back.classList.toggle("opacity-100");
@@ -39,20 +50,56 @@ productos.addEventListener("click", ()=>{
      
    setTimeout(() => {
 
-     productosMenu.classList.toggle("scale-x-0")
-    productosMenu.classList.toggle("scale-x-100")
+     segundoMenu.classList.toggle("scale-x-0")
+    segundoMenu.classList.toggle("scale-x-100")
 
   }, 10); // 10ms es imperceptible para el humano, pero oro puro para el navegador
 
 })
 
+}
+
+// productos
+const productos = document.getElementById("productos"); // link o boton productos
+
+const productosMenu = document.getElementById("productosMenu") //productos donde estan las card
+
+
+
+
+abrirSegundoMenu(productos, productosMenu, back, menu,segundoMenu);
+
+
+// galeria
+
+
+const galeriaSeccion = document.getElementById("galeriaSeccion"); // link button galeria de secciones
+
+const galeriaSeccionMenu = document.getElementById("galeriaSeccionMenu"); // donde estan las card de galaeria de secciones
+
+
+
+abrirSegundoMenu(galeriaSeccion, galeriaSeccionMenu, back, menu,segundoMenu);
+
+
+
+
+
+
+
+
+
+
+
 
 back.addEventListener("click", ()=>{
 
      
+  
+  productosMenu.classList.toggle("hidden")
 
-     productosMenu.classList.add("scale-x-0")
-    productosMenu.classList.remove("scale-x-100")
+     segundoMenu.classList.add("scale-x-0")
+    segundoMenu.classList.remove("scale-x-100")
     
 
      back.classList.remove("duration-300")
