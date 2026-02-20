@@ -70,7 +70,7 @@ const productosMenu = document.getElementById("productosMenu") //productos donde
 abrirSegundoMenu(productos, productosMenu, back, menu,segundoMenu);
 
 
-// galeria
+// galeria seccion
 
 
 const galeriaSeccion = document.getElementById("galeriaSeccion"); // link button galeria de secciones
@@ -82,7 +82,15 @@ const galeriaSeccionMenu = document.getElementById("galeriaSeccionMenu"); // don
 abrirSegundoMenu(galeriaSeccion, galeriaSeccionMenu, back, menu,segundoMenu);
 
 
+//galeria color
 
+const galeriaColor = document.getElementById("galeriaColor"); // link button galeria de secciones
+
+const galeriColornMenu = document.getElementById("galeriaColorMenu"); // donde estan las card de galaeria de secciones
+
+
+
+abrirSegundoMenu(galeriaColor, galeriaColorMenu, back, menu,segundoMenu);
 
 
 
@@ -96,7 +104,9 @@ back.addEventListener("click", ()=>{
 
      
   
-  productosMenu.classList.toggle("hidden")
+  productosMenu.classList.add("hidden")
+  galeriaSeccionMenu.classList.add("hidden")
+  galeriColornMenu.classList.add("hidden")
 
      segundoMenu.classList.add("scale-x-0")
     segundoMenu.classList.remove("scale-x-100")
