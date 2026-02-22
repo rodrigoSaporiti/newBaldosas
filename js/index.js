@@ -134,3 +134,36 @@ back.addEventListener("click", ()=>{
 
 
 })
+
+
+
+
+// touch ipad pro  nav
+
+if (window.matchMedia('(hover: none)').matches) {
+
+  const triggers = document.querySelectorAll('.mega-trigger');
+
+  triggers.forEach(btn => {
+
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const menu = btn.nextElementSibling;
+      const isOpen = menu.classList.contains('scale-y-100');
+
+      // cerrar todos
+      document.querySelectorAll('.megaMenu').forEach(m => {
+        m.classList.remove('scale-y-100');
+      });
+
+      // si estaba cerrado → abrirlo
+      if (!isOpen) {
+        menu.classList.add('scale-y-100');
+      }
+
+    });
+
+  });
+
+}
