@@ -200,6 +200,8 @@ buttonCategorias.addEventListener("click",()=>{
   categoriasResponsive.classList.remove("scale-x-0")
   categoriasResponsive.classList.add("scale-x-100")
 
+  
+
 
 })
 
