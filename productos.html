@@ -482,7 +482,7 @@
 
 
 
-<section id="menuCelularComun" class="w-screen h-screen flex  m-0 absolute scale-x-0 transition-transform duration-400 ease-out origin-left ">
+<section id="menuCelularComun" class="w-screen h-screen flex  m-0 absolute scale-x-0 transition-transform duration-400 ease-out origin-left z-40 ">
 
   <div class="h-screen w-3/4  bg-zinc-100  ">
 
@@ -514,7 +514,7 @@
 
 
 
-<section id="segundoMenu" class="w-screen h-[calc(100dvh-88px)] absolute  bg-zinc-100 scale-x-0 transition-transform duration-300 z-30 ease-out origin-right will-change-transform ">
+<section id="segundoMenu" class="w-screen h-[calc(100dvh-88px)] absolute  bg-zinc-100 scale-x-0 transition-transform duration-300 z-30 ease-out origin-right will-change-transform z-50 ">
 
   <div id="productosMenu"  class=" w-[90%] h-[90%] mx-auto mt-2 my-auto grid grid-cols-2 grid-rows-4 gap-4 hidden ">
 
@@ -777,419 +777,395 @@
 
 
 
+<section class="w-[78%] mx-auto">
+   <h1 class=" text-4xl lg:text-5xl m-2 lg:m-5">Mosaicos.</h1>
+</section>
 
 
-<!-- header -->
+<section class="w-full lg:hidden">
 
-<main class=" mx-auto h-fit reveal opacity-0 translate-y-8 transition-all duration-700   lg:w-[82%] 2xl:w-[75%]  lg:h-[calc(100dvh-120px)]  lg:mt-0 ">
+  <div class="w-full flex justify-between p-4">
 
-  <div class="flex flex-col h-full w-full  lg:grid lg:grid-cols-2  lg:gap-0 2xl:gap-0 ">
-
-
-    <div class="  md:h-full w-full h-1/2 space-y-10  mx-auto order-2 md:order-1 flex flex-col  md:justify-between    lg:w-full ">
-
-      <div class="mt-3 w-3/4 mx-auto my-auto md:w-full lg:space-y-5 2xl:space-y-11 md:space-y-3  md:mt-5   items-center ">
-
-        <h1 class=" text-3xl mx-auto  text-center leading-tight font-bold   md:text-4xl  lg:text-7xl 2xl:text-8xl lg:text-left  ">Calcáreas que se adaptan a tu estilo.</h1>
-        <h3 class="text-lg text-center mx-auto m-3 md:m-0  w-full md:text-lg lg:text-2xl lg:text-left">Más de 140 diseños para elegir, personaliza con los colores que más te gusten.</h3>
-    
-      </div>
-
-
-      <div class="w-full flex flex-col items-center lg:flex-col lg:items-center"> 
-
-        <button class="bg-gray-800 text-whit w-3/4 p-3 text-white text-2xl lg:text-2xl mt-5">Ver todos los diseños</button>
-        <div class="border w-[90%] mx-auto mt-3 md:mt-5 lg:mt-5"></div>
-
-      </div>
-
-    </div>
-
-    <div class="lg:order-2 h-1/2 md:h-full ">
-      <img src="img/8c2fa3a8-91a8-4f6e-bf23-ea215216f8b2.jfif" alt="" class="lg:h-[calc(100dvh-120px)]  h-72  w-full object-cover object-center ">
-    </div>
+    <button id="buttonCategorias" class="bg-gray-900 rounded-sm text-white p-2 shadow-md">Categorias</button>
+    <button class="bg-gray-900 rounded-sm text-white p-2 shadow-md">Filtros</button>
 
   </div>
 
+</section>
+
+<!-- categorias responsive -->
+
+<section id="categoriasResponsive" class="w-screen h-screen flex  m-0 absolute scale-x-0 transition-transform duration-400 ease-out origin-left z-10">
+
+  <div class="h-screen w-3/4  bg-zinc-100  ">
+
+    <div class="flex flex-col justify-start items-start text-2xl md:text-4xl mt-5 ms-2  space-y-3 md:space-y-10 md:mt-20 ">
+
+      <h2>Categorias</h2>
+
+    <a class="text-lg font-bold">Mosaicos</a>
+      <a class="text-lg">Lisas</a>
+      <a class="text-lg">Con relieve</a>
+      <a class="text-lg">Escalones y zócalos</a>
+      <a class="text-lg">40x40</a>
+      <a class="text-lg">Vereda</a>
+      <a class="text-lg">Piedras Naturales</a>
+
+      
+      <button id="buttonCerrar" class= "text-lg bg-gray-900 rounded-sm p-2 w-3/4 text-white mt-5">Cerrar</button>
+     </div>
+  </div>
+
+
+
+
+  <div class="w-1/4 bg-black/50 p-1   h-screen  ">
+
+   
+  </div>
+
+
+</section>
+
+
+
+<main class=" w-[95%] lg:w-[85%] mx-auto bg-gray-50">
+
+ 
+
+  <div class="grid grid-cols-1 lg:grid-cols-6 w-full mx-auto   lg:m-5">
+
+    <!-- FILTRO -->
+    <aside class="lg:col-span-1 lg:sticky lg:top-24 lg:self-start m-5 hidden lg:block">
+
+      <h2 class="text-3xl">Categorias.</h2>
+      
+      <div class="flex flex-col    gap-2 mt-5">
+
+      <a class="text-lg font-bold">Mosaicos</a>
+      <a class="text-lg">Lisas</a>
+      <a class="text-lg">Con relieve</a>
+      <a class="text-lg">Escalones y zócalos</a>
+      <a class="text-lg">40x40</a>
+      <a class="text-lg">Vereda</a>
+      <a class="text-lg">Piedras Naturales</a>
+      </div>
+
+    </aside>
+
+    <!-- PRODUCTOS -->
+    <section class="lg:col-span-5    m-5">
+
+      <div class="w-full grid gap-5 grid-cols-1  md:grid-cols-2">
+
+        <a href="">
+        <div class="w-full  shadow-md inset-shadow-sm p-4  hover:scale-105">
+
+          <div class="w-full grid grid-cols-4 gap-2  ">
+
+            <div class="col-span-1  flex justify-center items-center">
+            <img src="img/5.png" class="" alt="">
+            </div>
+            
+            <div class="col-span-3">
+              <img src="img/001.jpg" alt="">
+            </div>
+
+          </div>
+
+          <div class="w-full flex justify-between mt-3 p-0 ">
+              <p class="text-lg">Sku 001</p>
+              <p class="text-lg">20x20</p>
+
+
+              <div>
+                <button class="w-full h-full rounded-xs bg-gray-900 text-white p-1"><span class=" m-1 p-1 text-white">+</span>Info</button>
+              </div>
+
+            </div>
+
+        </div>
+        </a>
+         <a href="">
+        <div class="w-full  shadow-md inset-shadow-sm p-4  hover:scale-105">
+
+          <div class="w-full grid grid-cols-4 gap-2  ">
+
+            <div class="col-span-1  flex justify-center items-center">
+            <img src="img/5.png" class="" alt="">
+            </div>
+            
+            <div class="col-span-3">
+              <img src="img/001.jpg" alt="">
+            </div>
+
+          </div>
+
+          <div class="w-full flex justify-between mt-3 p-0 ">
+              <p class="text-lg">Sku 001</p>
+              <p class="text-lg">20x20</p>
+
+
+              <div>
+                <button class="w-full h-full rounded-xs bg-gray-900 text-white p-1"><span class=" m-1 p-1 text-white">+</span>Info</button>
+              </div>
+
+            </div>
+
+        </div>
+        </a>
+         <a href="">
+        <div class="w-full  shadow-md inset-shadow-sm p-4  hover:scale-105">
+
+          <div class="w-full grid grid-cols-4 gap-2  ">
+
+            <div class="col-span-1  flex justify-center items-center">
+            <img src="img/5.png" class="" alt="">
+            </div>
+            
+            <div class="col-span-3">
+              <img src="img/001.jpg" alt="">
+            </div>
+
+          </div>
+
+          <div class="w-full flex justify-between mt-3 p-0 ">
+              <p class="text-lg">Sku 001</p>
+              <p class="text-lg">20x20</p>
+
+
+              <div>
+                <button class="w-full h-full rounded-xs bg-gray-900 text-white p-1"><span class=" m-1 p-1 text-white">+</span>Info</button>
+              </div>
+
+            </div>
+
+        </div>
+        </a>
+         <a href="">
+        <div class="w-full  shadow-md inset-shadow-sm p-4  hover:scale-105">
+
+          <div class="w-full grid grid-cols-4 gap-2  ">
+
+            <div class="col-span-1  flex justify-center items-center">
+            <img src="img/5.png" class="" alt="">
+            </div>
+            
+            <div class="col-span-3">
+              <img src="img/001.jpg" alt="">
+            </div>
+
+          </div>
+
+          <div class="w-full flex justify-between mt-3 p-0 ">
+              <p class="text-lg">Sku 001</p>
+              <p class="text-lg">20x20</p>
+
+
+              <div>
+                <button class="w-full h-full rounded-xs bg-gray-900 text-white p-1"><span class=" m-1 p-1 text-white">+</span>Info</button>
+              </div>
+
+            </div>
+
+        </div>
+        </a>
+         <a href="">
+        <div class="w-full  shadow-md inset-shadow-sm p-4  hover:scale-105">
+
+          <div class="w-full grid grid-cols-4 gap-2  ">
+
+            <div class="col-span-1  flex justify-center items-center">
+            <img src="img/5.png" class="" alt="">
+            </div>
+            
+            <div class="col-span-3">
+              <img src="img/001.jpg" alt="">
+            </div>
+
+          </div>
+
+          <div class="w-full flex justify-between mt-3 p-0 ">
+              <p class="text-lg">Sku 001</p>
+              <p class="text-lg">20x20</p>
+
+
+              <div>
+                <button class="w-full h-full rounded-xs bg-gray-900 text-white p-1"><span class=" m-1 p-1 text-white">+</span>Info</button>
+              </div>
+
+            </div>
+
+        </div>
+        </a>
+         <a href="">
+        <div class="w-full  shadow-md inset-shadow-sm p-4  hover:scale-105">
+
+          <div class="w-full grid grid-cols-4 gap-2  ">
+
+            <div class="col-span-1  flex justify-center items-center">
+            <img src="img/5.png" class="" alt="">
+            </div>
+            
+            <div class="col-span-3">
+              <img src="img/001.jpg" alt="">
+            </div>
+
+          </div>
+
+          <div class="w-full flex justify-between mt-3 p-0 ">
+              <p class="text-lg">Sku 001</p>
+              <p class="text-lg">20x20</p>
+
+
+              <div>
+                <button class="w-full h-full rounded-xs bg-gray-900 text-white p-1"><span class=" m-1 p-1 text-white">+</span>Info</button>
+              </div>
+
+            </div>
+
+        </div>
+        </a> <a href="">
+        <div class="w-full  shadow-md inset-shadow-sm p-4  hover:scale-105">
+
+          <div class="w-full grid grid-cols-4 gap-2  ">
+
+            <div class="col-span-1  flex justify-center items-center">
+            <img src="img/5.png" class="" alt="">
+            </div>
+            
+            <div class="col-span-3">
+              <img src="img/001.jpg" alt="">
+            </div>
+
+          </div>
+
+          <div class="w-full flex justify-between mt-3 p-0 ">
+              <p class="text-lg">Sku 001</p>
+              <p class="text-lg">20x20</p>
+
+
+              <div>
+                <button class="w-full h-full rounded-xs bg-gray-900 text-white p-1"><span class=" m-1 p-1 text-white">+</span>Info</button>
+              </div>
+
+            </div>
+
+        </div>
+        </a>
+         <a href="">
+        <div class="w-full  shadow-md inset-shadow-sm p-4  hover:scale-105">
+
+          <div class="w-full grid grid-cols-4 gap-2  ">
+
+            <div class="col-span-1  flex justify-center items-center">
+            <img src="img/5.png" class="" alt="">
+            </div>
+            
+            <div class="col-span-3">
+              <img src="img/001.jpg" alt="">
+            </div>
+
+          </div>
+
+          <div class="w-full flex justify-between mt-3 p-0 ">
+              <p class="text-lg">Sku 001</p>
+              <p class="text-lg">20x20</p>
+
+
+              <div>
+                <button class="w-full h-full rounded-xs bg-gray-900 text-white p-1"><span class=" m-1 p-1 text-white">+</span>Info</button>
+              </div>
+
+            </div>
+
+        </div>
+        </a>
+         <a href="">
+        <div class="w-full  shadow-md inset-shadow-sm p-4  hover:scale-105">
+
+          <div class="w-full grid grid-cols-4 gap-2  ">
+
+            <div class="col-span-1  flex justify-center items-center">
+            <img src="img/5.png" class="" alt="">
+            </div>
+            
+            <div class="col-span-3">
+              <img src="img/001.jpg" alt="">
+            </div>
+
+          </div>
+
+          <div class="w-full flex justify-between mt-3 p-0 ">
+              <p class="text-lg">Sku 001</p>
+              <p class="text-lg">20x20</p>
+
+
+              <div>
+                <button class="w-full h-full rounded-xs bg-gray-900 text-white p-1"><span class=" m-1 p-1 text-white">+</span>Info</button>
+              </div>
+
+            </div>
+
+        </div>
+        </a>
+         <a href="">
+        <div class="w-full  shadow-md inset-shadow-sm p-4  hover:scale-105">
+
+          <div class="w-full grid grid-cols-4 gap-2  ">
+
+            <div class="col-span-1  flex justify-center items-center">
+            <img src="img/5.png" class="" alt="">
+            </div>
+            
+            <div class="col-span-3">
+              <img src="img/001.jpg" alt="">
+            </div>
+
+          </div>
+
+          <div class="w-full flex justify-between mt-3 p-0 ">
+              <p class="text-lg">Sku 001</p>
+              <p class="text-lg">20x20</p>
+
+
+              <div>
+                <button class="w-full h-full rounded-xs bg-gray-900 text-white p-1"><span class=" m-1 p-1 text-white">+</span>Info</button>
+              </div>
+
+            </div>
+
+        </div>
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+      
+    </section>
+
+  </div>
 </main>
 
 
 
 
-<!-- seccion info -->
-<section class=" p-1 mt-5 lg:mt-12 reveal opacity-0 translate-y-8 transition-all duration-700 bg-gray-100 w-full ">
-
-
-
-  <h2 class="text-center text-2xl m-5 font-bold font-serif lg:text-3xl ">¿Que es una baldosa calcárea?</h2>
-
-  <div class="grid grid-cols-2 gap-3 mt-5 w-[90%] mx-auto md:w-3/4 lg:w-2/3 2xl:w-1/2 lg:grid-cols-4 2xl:gap-10">
-
-
-    <div class="border border-black rounded-2xl h-65 lg:h-72 2xl:h-90 flex flex-col justify-around shadow-lg md:w-full   ">
-
-      <div class="h-1/2 w-full">
-      <img src="img/baldosa_1.webp" alt="" class="h-full w-full object-cover">
-      </div>
-      <div class="h-1/2 w-full ">
-      <p class="text-center md:text-lg  m-2">Una baldosa calcárea es una pieza artesanal de cemento.</p>
-      </div>
-
-
-    </div>
-
-    <div class="border border-black rounded-2xl h-65 lg:h-72 2xl:h-90 flex flex-col justify-around shadow-lg ">
-      <div class="h-1/2 w-full">
-      <img src="img/baldosa_2.webp" alt="" class="h-full w-full object-cover">
-      </div>
-      <div class="h-1/2">
-      <p class="text-center text-sm md:text-lg m-1">Es elaborada a mano y prensada, lo que garantiza máxima compactación del material y su resistencia.</p>
-      </div>
-    </div>
-
-    
-    <div class="border border-black rounded-2xl  h-65 lg:h-72 2xl:h-90  flex flex-col justify-around shadow-lg ">
-
-      <div class="h-1/2 w-full">
-      <img src="img/baldosa_3.webp" alt="" class="h-full w-full object-cover">
-      </div>
-      <div class="h-1/2">
-      <p class="text-center text-sm  md:text-lg m-1">La cara visible está compuesta con una mezcla 1:1 de cemento y arena, que garantiza calidad y durabilidad.</p>
-      </div>
-    </div>
-
-    <div class="border border-black rounded-2xl   h-65 lg:h-72 2xl:h-90 flex flex-col justify-around shadow-lg ">
-      <div class="h-1/2 w-full ">
-      <img src="img/tick.webp" alt="" class=" h-full w-full object-contain">
-      </div>
-      <div class="h-1/2">
-      <p class="text-center text-sm md:text-lg  m-1">Las baldosas calcáreas son piezas que duran toda la vida y pueden utilizarse en interiores, exteriores y revestimientos.</p>
-      </div>
-
-    </div>
-
-    
-
-  </div>
-
-
-  <div class="flex flex-col justify-center items-center w-full p-0 mt-10">
-
-     <button class="bg-gray-800 text-whit w-3/4 p-2 lg:p-3 text-white text-lg lg:text-2xl cursor-pointer">Ver preguntas frecuentes</button>
-        
-<div class="border w-[90%] mt-3 md:mt-5 lg:mt-5 lg:mb-5"></div>
-  </div>
-
-
-
-
-</section>
-
-
-<!-- seccion lisas  -->
-
-<section class="lg:h-fit reveal opacity-0 translate-y-8 transition-all duration-700  lg:w-[82%] mx-auto mt-5 lg:mt-16">
-  <div class="grid grid-cols-1 lg:grid-cols-2 w-[95%] mx-auto lg:h-full lg:gap-10">
-
-
-    <div class="flex flex-col space-y-3   mx-auto justify-center items-center lg:items-start lg:justify-between lg:space-y-0 lg:order-2">
-
-      
-      <div class=""><h2 class="text-4xl leading-tight font-bold lg:text-8xl lg:text-left ">Calcáreas Lisas.</h2></div>
-
-
-      <div class="flex flex-col items-center lg:items-start lg:space-y-10">
-        <p class="text-base lg:text-2xl lg:text-left font-semibold">Versatilidad total para crear espacios únicos.</p>
-       <p class="text-base lg:text-2xl text-center lg:text-left">Varios tamaños y colores para adaptarse a distintos estilos y formas de colocación.</p>
-      </div>
- 
-
-      <div class=" flex-col justify-center items-center w-full p-0 mt-10  hidden lg:flex">
-
-         <button class="bg-gray-800 text-whit w-3/4 p-2 text-white text-lg lg:text-2xl hidden  lg:block">Ver todos los colores y tamaños.</button>
-        
-         <div class="border w-full mt-3 md:mt-5 lg:block hidden lg:mt-5 "></div>
-
-      </div>
-      
-
-
-    </div>
-
-
-
-
-    <div class="grid grid-cols-2 auto-rows-[150px] md:auto-rows-[250px] gap-1 lg:auto-rows-[300px] lg:order-1 lg:gap-2">
-
-      <img src="img/piso_calcareo_gris.webp" alt="piso baldosas calcáreas grises" class="w-full h-full object-cover object-[center_80%]">
-      <img src="img/piso_calcareo_multicolor.webp" alt="piso baldosas calcáreas varios colores" class="w-full h-full object-cover object-[center_80%]">
-
-      <img src="img/damero_calcareo.webp" alt="piso baldosas calcáreas estilo damero" class="col-span-2 w-full h-full object-cover">
-
-
-    </div>
-
-
-
-       <div class="flex flex-col justify-center items-center w-full p-0 mt-10 lg:hidden">
-
-         <button class="bg-gray-800 text-whit w-3/4 p-2 text-white text-lg lg:text-2xl  lg:hidden">Ver todos los colores y tamaños.</button>
-        
-         <div class="border w-[90%] mt-3 md:mt-5 lg:hidden lg:mt-5"></div>
-
-      </div>
-      
-
-
-
-  </div>
-
-
-
-</section>
-
-
-
-
-
-<!-- seccion piscinas -->
-
-<section class=" bg-gray-100 reveal opacity-0 translate-y-8 transition-all duration-700 lg:mt-16">
-
-
- <h2 class="text-4xl font-bold text-center m-5 leading-relaxed md:text-7xl lg:text-7xl ">En cada espacio que imagines.</h2>
-
-  <div class="grid grid-cols-2 auto-rows-[300px] lg:auto-rows-[500px] mx-auto lg:w-[82%] w-[95%]  gap-2">
-
-    <div class="w-full h-full">
-    <img src="img/piscina_calcareas.webp" class="w-full h-full object-cover" alt="">
-    </div>
-   <div class="w-full h-full">
-    <img src="img/piscina_calcareas2.webp"  class="w-full h-full object-cover" alt="">
-   </div>
-     
-    
-  </div>
-
-
-  <h2 class="text-center text-lg lg:text-2xl m-5">Baldosas calcáreas que se integran al revestimiento y piso de piscinas.</h2>
-
-      <div class=" flex-col justify-center items-center w-full p-0 mt-10  flex">
-
-         <button class="bg-gray-800 text-whit w-3/4 p-2 text-white text-lg lg:text-2xl ">Ver sección piscinas</button>
-        
-         <div class="border w-[90%] mt-3 md:mt-5  mb-5 lg:mt-5 "></div>
-
-      </div>
-
-
-
-
-
-</section>
-
-
-
-<!-- seccion negocios -->
-<section class="mt-5 lg:mt-16  reveal opacity-0 translate-y-8 transition-all duration-700">
-
-  <div class=" grid grid-cols-1 gap-1   w-[95%] lg:w-[82%]  mx-auto ">
-
-    <div class="flex flex-col lg:grid grid-cols-2  lg:auto-rows-[400px]">
-
-      <div class="mb-15 lg:flex lg:items-center">
-      <h2 class="text-4xl  text-center font-bold lg:font-semibold lg:text-8xl 2xl:text-8xl 2xl:leading-snug  lg:text-left ">Una identidad única para tu negocio.</h2>
-       </div>
-
-       <div class="w-full h-37.5 md:h-64 lg:h-full">
-
-        <img src="img/locales_calcareas.webp" class="w-full h-full object-cover " alt="">
-
-       </div>
-      
-    </div>
-
-
-    <div class="flex flex-col justify-between lg:grid lg:grid-cols-2 ">
-
-      <div class="grid grid-cols-2 gap-1 md:auto-rows-[300px] lg:auto-rows-[300px] 2xl:auto-rows-[400px]">
-
-
-        <img src="img/locales_calcareas_2.webp"  class="w-full h-full object-cover" alt="">
-        <img src="img/locales_calcareas_3.webp" class="w-full h-full object-cover" alt="">
-        
-
-      </div>
-
-      <div class="w-[90%] mx-auto  mt-3 lg:w-3/4 lg:flex lg:items-center lg:h-full lg:flex-col lg:justify-between">
-
-        <p class="text-center text-lg lg:text-4xl  lg:text-left mx-auto  lg:mt-3 ">Baldosas calcáreas con diseño, color y patrones que realzan tu espacio comercial.</p>
-
-         <div class=" flex-col justify-center items-center w-full p-0 mt-5 lg:flex hidden ">
-
-         <button class="bg-gray-800  w-3/4 p-2 text-white text-lg lg:text-2xl cursor-pointer  ">Ver seccion locales</button>
-        
-         <div class="border w-[90%] mt-3 md:mt-5 lg:mt-5 "></div>
-
-      </div>
-
-      </div>
-
-      <div class="flex flex-col justify-center items-center w-full p-0 mt-5 lg:hidden  ">
-
-         <button class="bg-gray-800  w-3/4 p-2 text-white text-lg lg:text-2xl cursor-pointer  ">Ver seccion locales</button>
-        
-         <div class="border w-[90%] mt-3 md:mt-5 lg:mt-5 "></div>
-
-      </div>
-
-
-
-    </div>
-
-
-
-
-
-
-
-  </div>
-
-
-
-
-
-</section>
-
-
-
-<!-- seccion terminaciones -->
-
-<section class="mt-5 lg:mt-16  bg-gray-100 reveal opacity-0 translate-y-8 transition-all duration-700">
-  <div class="w-[95%] lg:w-[82%] mx-auto  ">
-  
-  <h2 class="text-center p-4 lg:p-10 lg:text-7xl text-4xl font-bold">Las mejores terminaciones.</h2>
-  
-  <div class="grid grid-cols-4 gap-1 lg:gap-2 lg:auto-rows-[450px] auto-rows-[250px]">
-
-    <img src="img/zocalos.webp" class="lg:col-span-1 col-span-2 object-cover w-full h-full" alt="">
-    <img src="img/escalones.webp" class="lg:col-span-3 object-cover object-bottom col-span-2 lg:object-bottom-left w-full h-full " alt="">
-
-
-  </div>
-
-<p class="text-center lg:text-2xl m-5">Zócalos y escalones integrados al diseño.</p>
-
-
- <div class="flex flex-col justify-center items-center w-full p-0 mt-5   ">
-
-         <button class="bg-gray-800  w-3/4 p-2 text-white text-lg lg:text-2xl cursor-pointer   ">Ver escalones y zócalos</button>
-        
-         <div class="border w-[90%] mt-3 md:mt-5 lg:mt-5  mb-5"></div>
-
-      </div>
-
-
-
-</div>
-</section>
-
-
-<!-- card secciones -->
-
-<section class=" lg:mt-16 h-fit reveal opacity-0 translate-y-8 transition-all duration-700 ">
-
-  <h2 class="text-center text-4xl lg:text-7xl m-5 mb-10 lg:m-15 font-bold">Secciones.</h2>
-  
-  <div class="grid  grid-cols-2  lg:h-120 2xl:h-150  gap-4 lg:grid-cols-4 w-[95%] lg:w-[82%] mx-auto 2xl:gap-25 lg:gap-10 lg:auto-rows-[400px] mt-5 ">
-
-
-    <div class="grid  h-full">
-
-      <div class="w-full h-56 md:h-100 2xl:h-125 ">
-        <img src="img/baños_seccion.webp" class="rounded-3xl w-full h-full object-cover" alt="">
-        </div>
-
-
-        <div class=" flex-col justify-center items-center w-full p-0 mt-5  flex">
-
-         <button class="bg-gray-800 text-whit w-full p-2 text-white text-lg lg:text-2xl ">Baños.</button>
-        
-         <div class="border w-full mt-3 md:mt-5  mb-5 lg:mt-5 "></div>
-      </div>
-        
-    </div>
-
-
-    <div class="grid  h-full" >
-
-      <div class="w-full h-56 md:h-100 2xl:h-125">
-        <img src="img/cocinas_seccion.webp" class="rounded-3xl w-full h-full object-cover" alt="">
-        </div>
-
-
-        <div class=" flex-col justify-center items-center w-full p-0 mt-5  flex">
-
-         <button class="bg-gray-800 text-whit w-full p-2 text-white text-lg lg:text-2xl ">Cocinas.</button>
-        
-         <div class="border w-full mt-3 md:mt-5  mb-5 lg:mt-5 "></div>
-      </div>
-        
-    </div>
-
-     
-    <div class="grid  h-full">
-
-      <div class="w-full h-56 md:h-100 2xl:h-125">
-        <img src="img/exteriores_seccion.webp" class="rounded-3xl w-full h-full object-cover" alt="">
-        </div>
-
-
-        <div class=" flex-col justify-center items-center w-full p-0 mt-5  flex">
-
-         <button class="bg-gray-800 text-whit w-full p-2 text-white text-lg lg:text-2xl ">Exteriores.</button>
-        
-         <div class="border w-full mt-3 md:mt-5  mb-5 lg:mt-5 "></div>
-      </div>
-        
-    </div>
-
-    
-
-
-    <div class="grid  h-full">
-
-      <div class="w-full h-56 md:h-100 2xl:h-125">
-        <img src="img/interiores_seccion.webp" class="rounded-3xl w-full h-full object-cover" alt="">
-        </div>
-
-
-        <div class=" flex-col justify-center items-center w-full p-0 mt-5  flex">
-
-         <button class="bg-gray-800 text-whit w-full p-2 text-white text-lg lg:text-2xl ">Interiores.</button>
-        
-         <div class="border w-full mt-3 md:mt-5  mb-5 lg:mt-5 "></div>
-      </div>
-        
-    </div>
-    
-      
-
-      
-
-        
-
-
-
-  </div>
-
-
-</section>
-
-
-
-
-<footer class="bg-gray-900 h-120 mt-15 reveal opacity-0 translate-y-8 transition-all duration-700">
+<footer class="bg-gray-900 h-120 mt-15 ">
 
   <div class="h-full">
 

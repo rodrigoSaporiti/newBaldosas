@@ -167,3 +167,48 @@ if (window.matchMedia('(hover: none)').matches) {
   });
 
 }
+
+
+
+
+
+//efecto
+
+const reveals = document.querySelectorAll('.reveal');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.remove('opacity-0', 'translate-y-8');
+    }
+  });
+});
+
+reveals.forEach(el => observer.observe(el));
+
+
+// categorias responsive
+
+const buttonCategorias = document.getElementById("buttonCategorias");
+const categoriasResponsive = document.getElementById("categoriasResponsive");
+
+const buttonCerrar = document.getElementById("buttonCerrar");
+
+
+buttonCategorias.addEventListener("click",()=>{
+
+  categoriasResponsive.classList.remove("scale-x-0")
+  categoriasResponsive.classList.add("scale-x-100")
+
+
+})
+
+
+
+buttonCerrar.addEventListener("click",()=>{
+
+   categoriasResponsive.classList.toggle("scale-x-0")
+  categoriasResponsive.classList.toggle("scale-x-100")
+
+
+})
