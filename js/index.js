@@ -187,7 +187,8 @@ const observer = new IntersectionObserver(entries => {
 reveals.forEach(el => observer.observe(el));
 
 
-// categorias responsive
+// categorias responsive productos.html
+
 
 const buttonCategorias = document.getElementById("buttonCategorias");
 const categoriasResponsive = document.getElementById("categoriasResponsive");
@@ -214,3 +215,34 @@ buttonCerrar.addEventListener("click",()=>{
 
 
 })
+
+
+
+
+const buttonFiltros = document.getElementById("buttonFiltros");
+const filtrosResponsive = document.getElementById("filtrosResponsive");
+
+const buttonCerrarFiltros = document.getElementById("buttonCerrarFiltros");
+
+
+buttonFiltros.addEventListener("click",()=>{
+
+  filtrosResponsive.classList.remove("scale-x-0")
+  filtrosResponsive.classList.add("scale-x-100")
+
+  
+
+
+})
+
+
+
+buttonCerrarFiltros.addEventListener("click",()=>{
+
+   filtrosResponsive.classList.toggle("scale-x-0")
+  filtrosResponsive.classList.toggle("scale-x-100")
+
+
+})
+
+

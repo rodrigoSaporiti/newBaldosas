@@ -11,10 +11,10 @@
 
   <body class="scroll-smooth   ">
 
-<nav class="bg-white   shadow relative h-28 w-full hidden lg:block  ">
+<nav class="bg-white   shadow relative h-28 w-full hidden lg:block z-50 ">
 
   
-  <div class="w-[82%] 2xl:w-[75%] mx-auto my-auto px-4 flex justify-between  items-center h-full">
+  <div class="w-[82%] 2xl:w-[75%] mx-auto my-auto px-4 flex justify-between  z-50 items-center h-full">
 
     <!-- Logo -->
     <div class="h-full flex items-center justify-center ">
@@ -438,7 +438,7 @@
 </nav>
 
 
-<nav class="w-full bg-gray-50 h-22 md:h-28 lg:hidden ">
+<nav class="w-full bg-gray-50 h-22 md:h-28 lg:hidden  ">
 
 
   <div class="w-3/4 h-full flex items-center justify-between mx-auto ">
@@ -514,7 +514,7 @@
 
 
 
-<section id="segundoMenu" class="w-screen h-[calc(100dvh-88px)] absolute  bg-zinc-100 scale-x-0 transition-transform duration-300 z-30 ease-out origin-right will-change-transform z-50 ">
+<section id="segundoMenu" class="w-screen h-[calc(100dvh-88px)] absolute  bg-zinc-100 scale-x-0 transition-transform duration-300 z-50 ease-out origin-right will-change-transform  ">
 
   <div id="productosMenu"  class=" w-[90%] h-[90%] mx-auto mt-2 my-auto grid grid-cols-2 grid-rows-4 gap-4 hidden ">
 
@@ -777,17 +777,18 @@
 
 
 
-<section class="w-[78%] mx-auto">
-   <h1 class=" text-4xl lg:text-5xl m-2 lg:m-5">Mosaicos.</h1>
+<section class="w-[95%] lg:w-[85%] mx-auto">
+   <h1 class=" text-4xl lg:text-5xl m-2 ms-0 lg:m-5">Mosaicos.</h1>
 </section>
 
+<!-- // botones categorias filtros responsive -->
 
 <section class="w-full lg:hidden">
 
   <div class="w-full flex justify-between p-4">
 
     <button id="buttonCategorias" class="bg-gray-900 rounded-sm text-white p-2 shadow-md">Categorias</button>
-    <button class="bg-gray-900 rounded-sm text-white p-2 shadow-md">Filtros</button>
+    <button id="buttonFiltros" class="bg-gray-900 rounded-sm text-white p-2 shadow-md">Filtros</button>
 
   </div>
 
@@ -830,7 +831,7 @@
 
 <!-- // filtro responsive mosaicos -->
 
-<section id="filtrosResponsive" class="w-screen h-screen flex  m-0 absolute scale-x-0 transition-transform duration-400 ease-out origin-left z-10">
+<section id="filtrosResponsive" class="w-screen h-screen flex  m-0 absolute scale-x-0 transition-transform duration-400 ease-out origin-right z-10">
 
   
   <div class="w-1/4 bg-black/50 p-1   h-screen  ">
@@ -843,7 +844,10 @@
 
     <div class="flex flex-col justify-start items-start text-2xl md:text-4xl mt-5 ms-2  space-y-3 md:space-y-10 md:mt-20 ">
 
-      <h2>Categorias</h2>
+      <h2>Filtros</h2>
+
+      <p class="text-lg">Todos</p>
+      <p class="text-lg">Solo guardas</p>
 
       
     
@@ -851,7 +855,7 @@
 
 
       
-      <button id="buttonCerrar" class= "text-lg bg-gray-900 rounded-sm p-2 w-3/4 text-white mt-5">Cerrar</button>
+      <button id="buttonCerrarFiltros" class= "text-lg bg-gray-900 rounded-sm p-2 w-3/4 text-white mt-5">Cerrar</button>
      </div>
   </div>
 
@@ -864,14 +868,14 @@
 
 
 
-<main class=" w-[95%] lg:w-[85%] mx-auto bg-gray-50">
+<main class=" w-[95%] lg:w-[85%] mx-auto bg-gray-50 z-10">
 
  
 
   <div class="grid grid-cols-1 lg:grid-cols-6 w-full mx-auto   lg:m-5">
 
     <!-- FILTRO -->
-    <aside class="lg:col-span-1 lg:sticky lg:top-24 lg:self-start m-5 hidden lg:block">
+    <aside class="lg:col-span-1 lg:sticky lg:top-24 lg:self-start m-5 hidden lg:block z-10">
 
       <h2 class="text-3xl">Categorias.</h2>
       
