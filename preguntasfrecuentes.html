@@ -11,10 +11,10 @@
 
   <body class="scroll-smooth   ">
 
-<nav class="bg-white   shadow relative h-28 w-full hidden lg:block z-50 ">
+<nav class="bg-white   shadow relative h-28 w-full hidden lg:block  ">
 
   
-  <div class="w-[82%] 2xl:w-[75%] mx-auto my-auto px-4 flex justify-between  z-50 items-center h-full">
+  <div class="w-[82%] 2xl:w-[75%] mx-auto my-auto px-4 flex justify-between  items-center h-full">
 
     <!-- Logo -->
     <div class="h-full flex items-center justify-center ">
@@ -46,11 +46,11 @@
           group-hover:scale-y-100
          ">
       
-          <div class=" w-[85%] h-full mx-auto my-auto  grid grid-cols-8 gap-2  2x1:gap-4 ">
+          <div class=" w-[85%] h-full mx-auto my-auto  grid grid-cols-8 gap-2  2xl:gap-4 ">
 
           
 
-              <a class="my-auto " href="">
+              <a class="my-auto " href="productos.php?categoria=mosaicos">
               <div class=" w-full h-64  relative border-8 border-white shadow-lg  rounded-3xl overflow-hidden border-solid mx-auto my-auto hover:scale-105 transition-transform duration-300 hover:cursor-pointer">
 
                 <img src="img/mosaicos.webp" alt="" class="w-full h-full object-cover ">
@@ -161,7 +161,7 @@
           transition-transform duration-300 ease-out
           group-hover:scale-y-100">
       
-          <div class="w-[80%] h-full mx-auto my-auto  grid grid-cols-7 2x1:gap-4 gap-2 ">
+          <div class="w-[80%] h-full mx-auto my-auto  grid grid-cols-7 2xl:gap-4 gap-2 ">
 
           
 
@@ -438,7 +438,7 @@
 </nav>
 
 
-<nav class="w-full bg-gray-50 h-22 md:h-28 lg:hidden  ">
+<nav class="w-full bg-gray-50 h-22 md:h-28 lg:hidden ">
 
 
   <div class="w-3/4 h-full flex items-center justify-between mx-auto ">
@@ -482,7 +482,7 @@
 
 
 
-<section id="menuCelularComun" class="w-screen h-screen flex  m-0 absolute scale-x-0 transition-transform duration-400 ease-out origin-left z-40 ">
+<section id="menuCelularComun" class="w-screen h-screen flex  m-0 absolute scale-x-0 transition-transform duration-400 ease-out origin-left ">
 
   <div class="h-screen w-3/4  bg-zinc-100  ">
 
@@ -514,7 +514,7 @@
 
 
 
-<section id="segundoMenu" class="w-screen h-[calc(100dvh-88px)] absolute  bg-zinc-100 scale-x-0 transition-transform duration-300 z-50 ease-out origin-right will-change-transform  ">
+<section id="segundoMenu" class="w-screen h-[calc(100dvh-88px)] absolute  bg-zinc-100 scale-x-0 transition-transform duration-300 z-30 ease-out origin-right will-change-transform ">
 
   <div id="productosMenu"  class=" w-[90%] h-[90%] mx-auto mt-2 my-auto grid grid-cols-2 grid-rows-4 gap-4 hidden ">
 
@@ -775,191 +775,214 @@
 
 
 
+<main class="w-3/4 mx-auto">
+
+    <h1 class=" text-4xl lg:text-5xl m-2 ms-0 lg:m-5">Preguntas frecuentes.</h1>
 
 
-<section class="w-[95%] lg:w-[85%] mx-auto">
-   <h1 class=" text-4xl lg:text-5xl m-2 ms-0 lg:m-5">Mosaicos.</h1>
-</section>
+<div class="border-b py-4 ">
+  <button class="accordion cursor-pointer text-xl w-full flex justify-between items-center font-semibold text-left">
+    ¿Qué es una Baldosa calcárea?
+    <span class="icon text-xl ">+</span>
+  </button>
 
-<!-- // botones categorias filtros responsive -->
-
-<section class="w-full lg:hidden">
-
-  <div class="w-full flex justify-between p-4">
-
-    <button id="buttonCategorias" class="bg-gray-900 rounded-sm text-white p-2 shadow-md">Categorias</button>
-    <button id="buttonFiltros" class="bg-gray-900 rounded-sm text-white p-2 shadow-md">Filtros</button>
-
+  <div class="content max-h-0 overflow-hidden transition-all duration-300">
+    <p class="mt-3 text-gray-600 font-semibold">
+      Una baldosa calcárea es una pieza plana y con un espesor de aproximadamente de 2cm(se puede fabricar de 1.5cm para
+              pared) se utilizan para revestir pisos o paredes. 
+              Las baldosas se fabrican una por una mediante <span class="font-bold"> prensado hidráulico</span>, proceso que compacta el material y garantiza su resistencia.
+               Su cara visible utiliza una proporción <span class="font-bold"> 1:1 de cemento y arena</span>, lo que asegura una excelente durabilidad con el paso del tiempo.
+    </p>
   </div>
 
-</section>
+</div>
 
-<!-- categorias responsive -->
+<div class="border-b py-4 ">
+  <button class="accordion cursor-pointer text-xl w-full flex justify-between items-center font-semibold text-left">
+    ¿Qué es lo que caracteriza a las Baldosas Calcáreas?
+    <span class="icon text-xl ">+</span>
+  </button>
 
-<section id="categoriasResponsive" class="w-screen h-screen flex  m-0 absolute scale-x-0 transition-transform duration-400 ease-out origin-left z-10">
-
-  <div class="h-screen w-3/4  bg-zinc-100  ">
-
-    <div class="flex flex-col justify-start items-start text-2xl md:text-4xl mt-5 ms-2  space-y-3 md:space-y-10 md:mt-20 ">
-
-      <h2>Categorias</h2>
-
-    <a class="text-lg font-bold">Mosaicos</a>
-      <a class="text-lg">Lisas</a>
-      <a class="text-lg">Con relieve</a>
-      <a class="text-lg">Escalones y zócalos</a>
-      <a class="text-lg">40x40</a>
-      <a class="text-lg">Vereda</a>
-      <a class="text-lg">Piedras Naturales</a>
-
-      
-      <button id="buttonCerrar" class= "text-lg bg-gray-900 rounded-sm p-2 w-3/4 text-white mt-5">Cerrar</button>
-     </div>
+  <div class="content max-h-0 overflow-hidden transition-all duration-300">
+    <p class="mt-3 text-gray-600 font-semibold">
+      Las baldosas calcáreas se caracterizan por su fabricación artesanal.<span class="font-bold"> Sus microfisuras, variaciones de tono e imperfecciones son rasgos naturales y parte de su esencia. </span> Estas particularidades les otorgan un carácter único y las convierten en una excelente opción para crear espacios con personalidad. Además, permiten personalizar los espacios mediante distintos diseños, eligiendo sus colores o utilizando baldosas lisas para formar patrones (como por ejemplo los clasicos dameros).
+    </p>
   </div>
 
+</div>
 
 
 
-  <div class="w-1/4 bg-black/50 p-1   h-screen  ">
+<div class="border-b py-4 ">
+  <button class="accordion cursor-pointer text-xl w-full flex justify-between items-center font-semibold text-left">
+    ¿Por qué duran para toda la vida?
+    <span class="icon text-xl ">+</span>
+  </button>
 
-   
+  <div class="content max-h-0 overflow-hidden transition-all duration-300">
+    <p class="mt-3 text-gray-600 font-semibold">
+      Las baldosas calcáreas se caracterizan por su gran durabilidad. A diferencia de otros revestimientos, su color y diseño no son una pintura superficial, sino que forman parte del propio material. <span class="font-bold"> Su cara visible está compuesta por una mezcla de cemento y arena en proporción 1:1, lo que le da una gran resistencia al desgaste.</span>
+
+Además, la capa superficial tiene un espesor aproximado de 5 mm, por lo que el desgaste con el paso del tiempo es mínimo. Incluso después de muchos años de uso,<span class="font-bold"> las baldosas pueden restaurarse mediante un pulido</span>, recuperando nuevamente su apariencia y brillo original. <span class="font-bold">Por esta razón, es común encontrar pisos de baldosas calcáreas que se mantienen en excelente estado durante generaciones.</span>
+    </p>
   </div>
 
+</div>
 
-</section>
 
+<div class="border-b py-4 ">
+  <button class="accordion cursor-pointer text-xl w-full flex justify-between items-center font-semibold text-left">
+    ¿Son para exteriores o interiores?
+    <span class="icon text-xl ">+</span>
+  </button>
 
-<!-- // filtro responsive mosaicos -->
-
-<section id="filtrosResponsive" class="w-screen h-screen flex  m-0 absolute scale-x-0 transition-transform duration-400 ease-out origin-right z-10">
-
-  
-  <div class="w-1/4 bg-black/50 p-1   h-screen  ">
-
-   
+  <div class="content max-h-0 overflow-hidden transition-all duration-300">
+    <p class="mt-3 text-gray-600 font-semibold">
+      Son una<span class="font-bold"> excelente opción tanto para espacios interiores como exteriores.</span> Pueden utilizarse en pisos, mesadas, paredes,  barras e incluso en cualquier lugar que imagines, siempre teniendo en cuenta el espesor de la pieza. Su versatilidad las hace ideales para una amplia variedad de usos.
+    </p>
   </div>
 
-
-  <div class="h-screen w-3/4  bg-zinc-100  ">
-
-    <div class="flex flex-col justify-start items-start text-2xl md:text-4xl mt-5 ms-2  space-y-3 md:space-y-10 md:mt-20 ">
-
-      <h2>Filtros</h2>
-
-      <p class="text-lg">Todos</p>
-      <p class="text-lg">Solo guardas</p>
-
-      
-    
+</div>
 
 
 
-      
-      <button id="buttonCerrarFiltros" class= "text-lg bg-gray-900 rounded-sm p-2 w-3/4 text-white mt-5">Cerrar</button>
-     </div>
+<div class="border-b py-4 ">
+  <button class="accordion cursor-pointer text-xl w-full flex justify-between items-center font-semibold text-left">
+    ¿Cuanto tarda su Fabricación?
+    <span class="icon text-xl ">+</span>
+  </button>
+
+  <div class="content max-h-0 overflow-hidden transition-all duration-300">
+    <p class="mt-3 text-gray-600 font-semibold">
+     <span class="font-bold"> Nuestro proceso de fabricación se adapta a la demanda y a la cola de pedidos</span>, por lo que recomendamos consultar el stock disponible.
+La demora en la fabricación de los mosaicos calcáreos se debe a que se trata de un proceso artesanal que consta de varias etapas. Cada baldosa se elabora de manera individual en una prensa hidráulica, lo que requiere tiempo y dedicación en cada fase del proceso.
+Además, <span class="font-bold"> cada pedido se confecciona especialmente para cada cliente</span>, lo que permite cuidar cada detalle y asegurar que cada pieza sea creada con la calidad y la atención que merece.
+    </p>
   </div>
 
+</div>
 
 
+<div class="border-b py-4 ">
+  <button class="accordion cursor-pointer text-xl w-full flex justify-between items-center font-semibold text-left">
+    ¿Se pueden elegir los colores de cada diseño?
+    <span class="icon text-xl ">+</span>
+  </button>
+
+  <div class="content max-h-0 overflow-hidden transition-all duration-300">
+    <p class="mt-3 text-gray-600 font-semibold">
+     En las baldosas de diseño, podés elegir el modelo y elegir sus colores dentro de la paleta que ofrecemos, según tu gusto y preferencia.
 
 
-
-</section>
-
-
-
-<main class=" w-[95%] lg:w-[85%]  mx-auto bg-gray-50 z-10">
-
- 
-
-  <div class="grid grid-cols-1 lg:grid-cols-6 w-full mx-auto   lg:m-5">
-
-    <!-- FILTRO -->
-    <aside class="lg:col-span-1 lg:sticky lg:top-24 lg:self-start m-5 hidden   lg:block z-10">
-
-      <h2 class="text-3xl">Categorias.</h2>
-
-     
-      
-      <div class="flex flex-col    gap-2 mt-5">
-
-      <a class="text-lg font-bold">Mosaicos</a>
-      <a class="text-lg">Lisas</a>
-      <a class="text-lg">Con relieve</a>
-      <a class="text-lg">Escalones y zócalos</a>
-      <a class="text-lg">40x40</a>
-      <a class="text-lg">Vereda</a>
-      <a class="text-lg">Piedras Naturales</a>
-      </div>
-
-     
-
-    
-
-    </aside>
-
-    <!-- PRODUCTOS -->
-    <section class="lg:col-span-5    m-5">
-
-      <div class="w-full grid gap-5 grid-cols-1  md:grid-cols-3">
-
-        <a href="">
-        <div class="w-full  shadow-md inset-shadow-sm p-4  hover:scale-105">
-
-          <div class="w-full grid grid-cols-1 gap-2  ">
-
-            <div class="col-span-1  flex justify-center items-center">
-            <img src="img/5.png" class="" alt="">
-            </div>
-            
-           
-
-          </div>
-
-          <div class="w-full flex justify-between mt-3 p-0 ">
-              <p class="text-lg">Sku 001</p>
-              <p class="text-lg">20x20</p>
-
-
-              <div>
-                <button class="w-full h-full rounded-xs bg-gray-900 text-white p-1"><span class=" m-1 p-1 text-white">+</span>Info</button>
-              </div>
-
-            </div>
-
-        </div>
-        </a>
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-
-
-
-
-
-      
-    </section>
-
+    </p>
   </div>
+
+</div>
+
+
+<div class="border-b py-4 ">
+  <button class="accordion cursor-pointer text-xl w-full flex justify-between items-center font-semibold text-left">
+    ¿Qué cuidados debo tener antes de colocar las baldosas?
+    <span class="icon text-xl ">+</span>
+  </button>
+
+  <div class="content max-h-0 overflow-hidden transition-all duration-300">
+    <p class="mt-3 text-gray-600 font-semibold">
+   Es importante que, antes de la colocación, las baldosas se encuentren almacenadas en obra en un <span class="font-bold"> lugar limpio y protegido</span>, evitando que su cara visible esté expuesta a polvo, suciedad u otros elementos que puedan mancharlas.
+Recordar que la superficie de la baldosa está compuesta a base de cemento, un material naturalmente absorbente, por lo que, hasta que no se realice el sellado final, cualquier sustancia que entre en contacto con ella —incluso agua— puede dejar marcas en la superficie.
+
+    </p>
+  </div>
+
+</div>
+
+
+
+
+
+<div class="border-b py-4 ">
+  <button class="accordion cursor-pointer text-xl w-full flex justify-between items-center font-semibold text-left">
+    ¿Con que material se colocan las baldosas calcáreas?
+    <span class="icon text-xl ">+</span>
+  </button>
+
+  <div class="content max-h-0 overflow-hidden transition-all duration-300">
+    <p class="mt-3 text-gray-600 font-semibold">
+    Se pueden colocar con mezcla o con adhesivo para la colocación de pisos impermeable o flexible.
+
+    </p>
+  </div>
+
+</div>
+
+
+<div class="border-b py-4 ">
+  <button class="accordion cursor-pointer text-xl w-full flex justify-between items-center font-semibold text-left">
+    ¿Se pueden cortar?
+    <span class="icon text-xl ">+</span>
+  </button>
+
+  <div class="content max-h-0 overflow-hidden transition-all duration-300">
+    <p class="mt-3 text-gray-600 font-semibold">
+    Si se necesita hacer algún corte en las baldosas, pueden ser cortadas con <span class="font-bold">amoladora de mano</span> sin ningun problema.
+    </p>
+  </div>
+
+</div>
+
+
+<div class="border-b py-4 ">
+  <button class="accordion cursor-pointer text-xl w-full flex justify-between items-center font-semibold text-left">
+    ¿Qué son las juntas y por qué se deben rellenar?
+    <span class="icon text-xl ">+</span>
+  </button>
+
+  <div class="content max-h-0 overflow-hidden transition-all duration-300">
+    <p class="mt-3 text-gray-600 font-semibold">
+    Las juntas son los espacios entre las baldosas (se recomienda unos 1 mm). <span class="font-bold"> Deben rellenarse con pastina</span>, un material fino a base de cemento (gris o blanco) y agua que se utiliza para completar y sellar esas separaciones. Esto ayuda a fijar mejor las piezas, <span class="font-bold"> evita la acumulación de suciedad y humedad entre ellas, y facilita la limpieza de la superficie. </span>
+    </p>
+  </div>
+
+</div>
+
+
+<div class="border-b py-4 ">
+  <button class="accordion cursor-pointer text-xl w-full flex justify-between items-center font-semibold text-left">
+     ¿Es necesario sellar las baldosas después de su colocación?
+    <span class="icon text-xl ">+</span>
+  </button>
+
+  <div class="content max-h-0 overflow-hidden transition-all duration-300">
+    <p class="mt-3 text-gray-600 font-semibold">
+    Las baldosas calcáreas tienen su cara visible hecha a base de cemento, un material naturalmente poroso y absorbente. <span class="font-bold">Por esta razón es importante realizar un sellado después de la colocación</span>, para reducir la absorción y evitar que derrames o manchas penetren en el material. Si bien el sellado brinda protección, es importante aclarar que no vuelve la superficie completamente impermeable, por lo que siempre se recomienda un cuidado normal del piso.
+
+Para interior y exterior, se pueden sellar con hidrolaca, un producto que se aplica una vez y forma una protección duradera que se mantiene en buen estado durante largos períodos de uso.
+
+Para interiores, también es posible realizar el sellado con cera en pasta, y posteriormente mantener el piso aplicando cera líquida, lo que ayuda a conservar su protección
+    </p>
+  </div>
+
+</div>
+
+
+
+
+
+
 </main>
 
 
 
 
-<footer class="bg-gray-900 h-120 mt-15 ">
+
+
+
+
+
+
+
+
+<footer class="bg-gray-900 h-120 mt-15 reveal opacity-0 translate-y-8 transition-all duration-700">
 
   <div class="h-full">
 
@@ -986,6 +1009,32 @@
 <p class="bg-gray-900 text-white">© 2024-2026 Baldosas Lv</p>
 </footer>
 
+<script>
+
+document.querySelectorAll(".accordion").forEach(btn => {
+
+  btn.addEventListener("click", function(){
+
+    const content = this.nextElementSibling;
+    const icon = this.querySelector(".icon");
+
+    if(content.style.maxHeight){
+
+      content.style.maxHeight = null;
+      icon.textContent = "+";
+
+    }else{
+
+      content.style.maxHeight = content.scrollHeight + "px";
+      icon.textContent = "−";
+
+    }
+
+  });
+
+});
+
+</script>
 
 <script src="js/index.js"></script>
   </body>
